@@ -1,0 +1,71 @@
+.services-container {
+    padding-left: 8vw;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.services-container .totle-box {
+    flex: 1;
+    max-width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-container .totle-box .desc {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.services-container .slider {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: scroll;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-card {
+    min-width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 0 rgba(0, 0, 0, 0.1), -5px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-card .title {
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.slider-card .desc {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    color: rgba(25, 24, 37, 0.5);
+}
+
+@media (max-width : 600px) {
+    .services-container{
+        flex-direction: column;
+    }
+    .services-container .totle-box{
+        align-self: center;
+    }
+
+    .services-container{
+        padding-left: 1rem;
+    }
+   
+}

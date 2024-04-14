@@ -1,0 +1,61 @@
+
+.footer-container{
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    gap: 2rem;
+}
+
+.travalog{
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.company{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.contact{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.meet-us{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo{
+    display: block;
+    width: 100px;
+}
+.footer-text{
+    font-size: 12px;
+    font-weight: 700;
+    color: #19182580;
+}
+.footer-title{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.link-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width : 640px) {
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}

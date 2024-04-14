@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: #EEEEEE;
+}
+
+.main-container{
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -223px;
+  left: -356px;
+  width: 500px;
+  height: 500px;
+  background-color: #ff56225a;  
+  border-radius: 50%; 
+  box-shadow: 0 0 150px 150px #ff56225a;
+  opacity: 50%;
+  z-index: -1; 
+}

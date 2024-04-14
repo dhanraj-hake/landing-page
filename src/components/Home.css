@@ -1,0 +1,149 @@
+.home {
+    padding: 2rem 4vw 4vw 8vw;
+    width: 100%;
+    display: flex;
+}
+
+.home .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 0;
+    gap: 1.5rem;
+}
+
+.home .right {
+    flex: 1.4;
+    background-image: url("/layer.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2vw;
+}
+
+.wish-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    color: #F85E9F;
+    background-color: white;
+    font-weight: 700;
+}
+
+.home-heading {
+    font-size: 50px;
+    font-weight: 700;
+    padding-right: 3rem;
+}
+
+.color-pink {
+    color: #F85E9F;
+}
+
+.home-desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: #19182580;
+}
+
+.get-statred-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    color: white;
+    background-color: #5D50C6;
+    font-weight: 700;
+    box-shadow: 0 25px 14px 0 #0000001A;
+}
+
+.watch-demo-btn {
+    width: 140px;
+    height: 40px;
+    border-radius: 90px;
+    border: none;
+    background-color: white;
+    color: #5D50C6;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.home-bottom-btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.right .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.right .right-right {
+    flex: 1;
+    position: relative;
+}
+
+.card-img {
+    display: block;
+    width: 50%;
+}
+.relative{
+    position: relative;
+}
+.message-icon{
+    width: 3.2vw;
+    height: 3.2vw;
+    background-color: #F85E9F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+}
+.add-user-icon{
+    width: 3.2vw;
+    height: 3.2vw;
+    background-color: #FF5722;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -28%;
+    left: 20%;
+}
+
+.message-icon img{
+    width: 2vw;
+}
+
+.add-user-icon img{
+    width: 2vw;
+}
+
+@media (max-width: 860px) {
+    .home {
+        flex-direction: column;
+    }
+    .card-img {
+        width: 70%;
+    }
+    .message-icon,
+    .add-user-icon{
+        width: 5vw;
+        height: 5vw;
+    }
+}

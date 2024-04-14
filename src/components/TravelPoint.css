@@ -1,0 +1,114 @@
+.travel-point-container{
+    margin-top: 2rem;
+    width: 100%;
+    padding-right: 4vw;
+    min-height: 400px;
+    display: flex;
+}
+
+.travel-point-container .travelleft{
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.travel-point-container .travelright{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.bg-shape{
+    position: absolute;
+    height: 350px;
+    width: 80%;
+    background-color: #FACD49;
+    border-radius: 0 500px 500px 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.travel-point-img{
+    display: block;
+    width: 420px;
+}
+
+.travelright-grid{
+    flex: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.travelright-grid .flex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.travelright-box{
+    width: 150px;
+    height: 100px;
+    border: 1px solid #1918251A;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px;
+}
+
+.travelright-box .num{
+    color: #FF5722;
+    font-weight: 700;
+    font-size: 20px;
+}
+.travelright-box .desc{
+    color: #191825;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.travel-title{
+    font-weight: 700;
+}
+.third-link{
+    color: #19182580;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+.main-heading{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (max-width : 830px) {
+    .travel-point-container{
+        flex-direction: column;
+        padding-right: 0;
+        gap: 2rem;
+    }
+    .travel-point-container .travelright{
+        padding: 0 5vw;
+    }
+}
+@media (max-width : 370px) {
+    .travelright-grid .flex{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bg-shape{
+        width: 95%;
+    }
+    .travel-point-container .travelleft{
+        padding-right: 0;
+    }
+    .travel-point-img{
+        width: 380px;
+    }
+}
